@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+
+
+  <div class="container">
+    <h1>Shopping List</h1>
+
+    <form id="js-shopping-list-form">
+      <label for="shopping-list-entry">Add an item</label>
+      <input type="text" name="shopping-list-entry" id="shopping-list-entry" placeholder="e.g., broccoli">
+      <button type="submit">Add item</button>
+    </form>
+
+    <ul class="shopping-list">
+      <li>
+        <span class="shopping-item">apples</span>
+        <div class="shopping-item-controls">
+          <button class="shopping-item-toggle">
+            <span class="button-label">check</span>
+          </button>
+          <button class="shopping-item-delete">
+            <span class="button-label">delete</span>
+          </button>
+        </div>
+      </li>
+      <li>
+        <span class="shopping-item">oranges</span>
+        <div class="shopping-item-controls">
+          <button class="shopping-item-toggle">
+            <span class="button-label">check</span>
+          </button>
+          <button class="shopping-item-delete">
+            <span class="button-label">delete</span>
+          </button>
+        </div>
+      </li>
+      <li>
+        <span class="shopping-item shopping-item__checked">milk</span>
+        <div class="shopping-item-controls">
+          <button class="shopping-item-toggle">
+            <span class="button-label">check</span>
+          </button>
+          <button class="shopping-item-delete">
+            <span class="button-label">delete</span>
+          </button>
+        </div>
+      </li>
+      <li>
+        <span class="shopping-item">bread</span>
+        <div class="shopping-item-controls">
+          <button class="shopping-item-toggle">
+            <span class="button-label">check</span>
+          </button>
+          <button class="shopping-item-delete">
+            <span class="button-label">delete</span>
+          </button>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <script
+    src="https://code.jquery.com/jquery-3.4.0.slim.js"
+    integrity="sha256-milezx5lakrZu0OP9b2QWFy1ft/UEUK6NH1Jqz8hUhQ="
+    crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+</body>
+</html>
