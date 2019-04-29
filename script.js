@@ -40,10 +40,15 @@ function deleteItem() {
 //check item
 
 function checkItem() {
-  $('.shopping-list').on('click', '.shopping-item-toggle', function(event) {
-    $(this).closest('li').find('.shopping-item').toggleClass('shopping-item__checked');
-    debugger;
+  $('.shopping-list').on('click', '.shopping-item-toggle', function (event) {
+    const shoppingItem = $(this).closest('li').find('.shopping-item')
+    shoppingItem.toggleClass('shopping-item__checked')
+   
+  
   });
-  
-  
 }
+
+
+$(handleNewItem())
+$(deleteItem())
+$(checkItem())
